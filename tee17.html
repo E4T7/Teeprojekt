@@ -54,6 +54,28 @@
       max-width: 400px;
       font-size: 18px;
     }
+    @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-image img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .text {
+    max-width: 90vw;
+    text-align: center;
+  }
+}
   </style>
 
 </head>
@@ -75,10 +97,10 @@
 
   <div class="text">
     <p>
-      Text<br><br>
-      Text<br><br>
-      Text<br><br>
-      <b>Preis</b>
+      Mit jeder Tasse kommst du deinem Ziel näher-bis dieser Huster dein letzter ist.<br><br>
+      Brennessel,Salbei,Kamille<br><br>
+      Hilft gegen Husten und Halsschmerzen<br><br>
+      <b>Preis: für 10g 1.60Fr.</b>
     </p>
   </div>
 
