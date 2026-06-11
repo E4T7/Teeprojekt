@@ -27,12 +27,28 @@
       text-align: center;
       color: white;
       text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      padding: 20px;
     }
 
     h1 {
       font-size: 60px;
       margin: 0;
-      text-align: center;
+    }
+
+    .hero-text {
+      font-size: 22px;
+      font-weight: bold;
+      max-width: 900px;
+    }
+
+    .map-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
     }
 
     .container {
@@ -73,72 +89,76 @@
       background: #2f4f2f;
       color: white;
     }
+
+    /* 📱 HANDY VERSION */
     @media (max-width: 768px) {
 
-  h1 {
-    font-size: 28px;
-  }
+      h1 {
+        font-size: 28px;
+      }
 
-  .hero {
-    height: auto;
-    padding: 30px 15px;
-  }
+      .hero {
+        height: auto;
+        padding: 30px 15px;
+      }
 
-  .hero p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
+      .hero-text {
+        font-size: 14px;
+        line-height: 1.4;
+      }
 
-  .hero a {
-    font-size: 14px;
-    padding: 10px 15px;
-  }
+      .map-button {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
 
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 20px 10px;
-  }
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 20px 10px;
+      }
 
-  .card img {
-    height: 220px;
-  }
+      .card img {
+        height: 220px;
+      }
 
-  .card h2 {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
+      .card h2 {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
   </style>
-
 </head>
+
 <body>
 
 <header class="hero">
+
   <h1>Teeprojekt der 1. Sekundarstufe<br>Vilters-Wangs</h1>
-  <p style="font-size:22px; font-weight:bold;">
-  Herzlich willkommen auf unserer Webseite. Wir sind die Klassen 1A und 1B der Schule Vilters-Wangs.
+
+  <p class="hero-text">
+    Herzlich willkommen auf unserer Webseite. Wir sind die Klassen 1A und 1B der Schule Vilters-Wangs.
     Wir haben ein Projekt mit verschiedenen Kräutern und Pflanzen gestartet. Dabei haben wir uns auch
     mit dem Kräuterpfarrer Künzle beschäftigt. Unsere Lehrerin kam auf die Idee, ein Teeprojekt zu starten.
-    Wir haben alles selbst berechnet und zusammengestellt. Auserdem haben wir eigene Flyer gestaltet und
+    Wir haben alles selbst berechnet und zusammengestellt. Außerdem haben wir eigene Flyer gestaltet und
     die Teemischungen selbst hergestellt. Mit diesem Projekt wollen wir etwas Geld für die Klassenkasse
-    sammeln, um einen Ausflug zu ermöglichen. Wir haben sehr viel Zeit, Mühe und Geduld in dieses Projekt
-    investiert und hoffen, dass es Ihnen gefällt.
-    <br>
-    <br>
-    <strong style="font-size:28px;">
-    Unser Angebot finden sie momentan im Hofladen Täli in Mels.
-    </strong>
-    <br>
-    <br>
- 
-    <a href="https://www.google.com/maps/search/?api=1&query=Hofladen+Täli+Mels"
-   target="_blank"
-   rel="noopener noreferrer"
-   style="display:inline-block;padding:10px 20px;background:#4CAF50;color:white;text-decoration:none;border-radius:5px;">
-   Standort Hofladen Täli</a>
+    sammeln, um einen Ausflug zu ermöglichen.
+    <br><br>
 
-</p>
+    <strong style="font-size:28px;">
+      Unser Angebot finden sie momentan im Hofladen Täli in Mels.
+    </strong>
+    <br><br>
+
+    <a class="map-button"
+       href="https://www.google.com/maps/search/?api=1&query=Hofladen+Täli+Mels"
+       target="_blank"
+       rel="noopener noreferrer">
+      Standort Hofladen Täli
+    </a>
+  </p>
+
 </header>
 
 <div class="container">
@@ -165,9 +185,7 @@
 </div>
 
 <footer>
-  <p>
-Geniessen sie unsere natürlichen Tesorten  
-  </p>
+  <p>Geniessen sie unsere natürlichen Teesorten</p>
 </footer>
 
 <script>
