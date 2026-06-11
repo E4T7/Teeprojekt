@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Meloria</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5fff2;
+      margin: 0;
+      padding: 30px;
+      color: #2f4f2f;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .images img {
+      width: 120px;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .main-image img {
+      width: 350px;
+      height: 500px;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+
+    .text {
+      max-width: 400px;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+<body>
+
+<h1>Meloria</h1>
+
+<div class="container">
+
+  <div class="images">
+    <img src="tee12_bild1.png" onclick="changeImage(this)">
+    <img src="tee12_bild2.png" onclick="changeImage(this)">
+    <img src="tee12_bild3.png" onclick="changeImage(this)">
+  </div>
+
+  <div class="main-image">
+    <img id="bigImage" src="tee12_bild1.png">
+  </div>
+
+  <div class="text">
+    <p>
+      Es ist für jeden einen Genuss<br><br>
+      Löwenzahn Blätter und Blüten, Holunderblüten, Brennnessel<br><br>
+      gegen Bauchschmerzen und für einen guten Start in den Tag<br><br>
+      <b>Preis: Pro 10g 2.50 Fr.</b>
+    </p>
+  </div>
+
+</div>
+
+<script>
+function changeImage(img) {
+  document.getElementById("bigImage").src = img.src;
+}
+</script>
+
+</body>
+</html>

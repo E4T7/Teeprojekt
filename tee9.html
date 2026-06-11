@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Magen Kräuter Tee</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5fff2;
+      margin: 0;
+      padding: 30px;
+      color: #2f4f2f;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .images img {
+      width: 120px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .main-image img {
+      width: 350px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .text {
+      max-width: 400px;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+<body>
+
+<h1>Magen Kräuter Tee</h1>
+
+<div class="container">
+
+  <div class="images">
+    <img src="tee9_bild1.png" onclick="changeImage(this)">
+    <img src="tee9_bild2.png" onclick="changeImage(this)">
+    <img src="tee9_bild3.png" onclick="changeImage(this)">
+  </div>
+
+  <div class="main-image">
+    <img id="bigImage" src="tee9_bild1.png">
+  </div>
+
+  <div class="text">
+    <p>
+      Ruhe für den Magen kraft aus kräutern<br><br>
+      kamille,Pfefferminze,Salbei,Brennnessel<br><br>
+      hilft gegen magen beschwerden<br><br>
+      <b>Preis:15gram für 2.50Franken</b>
+    </p>
+  </div>
+
+</div>
+
+<script>
+function changeImage(img) {
+  document.getElementById("bigImage").src = img.src;
+}
+</script>
+
+</body>
+</html>

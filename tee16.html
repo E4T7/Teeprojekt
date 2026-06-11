@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Blumika</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5fff2;
+      margin: 0;
+      padding: 30px;
+      color: #2f4f2f;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .images img {
+      width: 120px;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .main-image img {
+      width: 350px;
+      height: 500px;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+
+    .text {
+      max-width: 400px;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+<body>
+
+<h1>Blumika</h1>
+
+<div class="container">
+
+  <div class="images">
+    <img src="tee16_bild1.png" onclick="changeImage(this)">
+    <img src="tee16_bild2.png" onclick="changeImage(this)">
+    <img src="tee16_bild3.png" onclick="changeImage(this)">
+  </div>
+
+  <div class="main-image">
+    <img id="bigImage" src="tee16_bild1.png">
+  </div>
+
+  <div class="text">
+    <p>
+      Blumika ihr traue ich sehr,denn sie  ist für den Halsweh.<br><br>
+      Pfefferminze,Zitronenmelisse,Spitzwegerich,Schwarzer Holunder<br><br>
+      Hilft gegen Halsbeschwerden.<br><br>
+      <b>Preis: 10g für 2.50Fr</b>
+    </p>
+  </div>
+
+</div>
+
+<script>
+function changeImage(img) {
+  document.getElementById("bigImage").src = img.src;
+}
+</script>
+
+</body>
+</html>
